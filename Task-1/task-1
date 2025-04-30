@@ -10,6 +10,8 @@ Batch Duration: Dec 30,2024 to Apr 30,2025
 
 Mentor Name: Neela Santhosh
 
+Task-1
+
 The task is to create a Python pipeline that automates the process of data preprocessing, transformation, and loading using libraries like Pandas and Scikit-learn. 
 This pipeline will first extract raw data from a source such as a CSV file. Then, it will transform the data by performing essential cleaning steps like handling 
 missing values, encoding categorical variables, scaling numerical features, and other necessary preprocessing tasks to prepare the data for analysis or machine 
