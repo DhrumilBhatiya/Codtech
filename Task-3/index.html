@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Predictor</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <h1>Heart Disease Prediction Form</h1>
+    <form method="post" action="/predict">
+        <label>Age: <input type="number" name="age" required></label><br>
+        <label>Sex (1=Male, 0=Female): <input type="number" name="sex" required></label><br>
+        <label>Chest Pain Type (0-3): <input type="number" name="cp" required></label><br>
+        <label>Resting BP: <input type="number" name="trestbps" required></label><br>
+        <label>Cholesterol: <input type="number" name="chol" required></label><br>
+        <label>Fasting Blood Sugar (>120 = 1): <input type="number" name="fbs" required></label><br>
+        <label>Rest ECG (0-2): <input type="number" name="restecg" required></label><br>
+        <label>Max Heart Rate: <input type="number" name="thalach" required></label><br>
+        <label>Exercise Induced Angina: <input type="number" name="exang" required></label><br>
+        <label>Oldpeak: <input type="text" name="oldpeak" required></label><br>
+        <label>Slope (0-2): <input type="number" name="slope" required></label><br>
+        <label>CA (0-3): <input type="number" name="ca" required></label><br>
+        <label>Thal (1=normal, 2=fixed defect, 3=reversable defect): <input type="number" name="thal" required></label><br><br>
+        <button type="submit">Predict</button>
+    </form>
+    {% if result %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
